@@ -1,0 +1,145 @@
+body {
+    background-color: white;
+  }
+  
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .main-content{
+      min-height: 1000px;
+      width: 90%;
+      margin: 20px auto;
+      display: grid;
+      grid-template-rows: 20% 80%;
+      grid-template-columns: 300px 700px;
+  
+  }
+  .left-section{
+      grid-area: 1/1/3/2;
+      grid-column: span 1;
+      background-color: lightslategrey;
+  }
+  .right-section{
+      /* grid-area: 1/1/3/2; */
+      grid-column: span 1/ span 2;
+      background-color:rgb(189, 164, 212);
+      
+  }
+  
+  .left-content{
+      padding: 1rem;
+      color: white;
+  }
+  .profile-image img{
+      margin: auto;
+      display: block;
+      border: 1px solid white;
+      border-radius: 5%;
+      width: 60%;
+  }
+  .name{
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.02px;
+      padding: 0.8rem;
+  }
+  .designation{
+      font-size: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+  }
+  .description{
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 1rem;
+  }
+  
+  .skills{
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 1rem;
+      padding-bottom: 0.9rem;
+  }
+  .skill-name{
+    font-size: 0.8rem;
+  }
+  .contact-info{
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+  }
+  
+  
+  .right-main-content{
+      padding: 2rem 3rem;
+  }
+  .right-title{
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+  }
+  .para{
+      padding-left: 0.5rem;
+      padding-bottom: 0.3rem;
+  }
+  @media screen and (max-width:673px) {
+      .main-content{
+          grid-template-columns: repeat(1,1fr);
+      }
+  }
+  .container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.skill {
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.c {
+    background-color:blueviolet;
+    width: 75%;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.html {
+    background-color:blue;
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.css {
+    background-color:green;
+    color: aliceblue;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.javascript{
+    background-color:maroon;
+    color: aliceblue;
+    width: 60%;
+    border-radius: 15px;
+    text-align: center;
+}
+
